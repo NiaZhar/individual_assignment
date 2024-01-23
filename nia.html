@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PersonalWebsite</title>
+    <style>
+        body {
+            font-family: Arial, san-serif;
+            background: url(background.png);
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-color: sienna;
+            color: wheat ;
+            text-align: left;
+            padding: 220px;
+            font-size: 50px;
+            font-weight: bold;
+            background: url(background.png);
+        }
+
+        .images-container{
+            position: relative;
+            width: 100%;
+            margin-bottom: 45px;
+            padding: 120px 0 0 0;
+            overflow: hidden;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        header h1 {
+            font-size: 36px;
+        }
+
+        nav {
+            background-color:khaki;
+            text-align: right;
+            padding: 10px;
+        }
+
+        nav a {
+            position: relative;
+            color: black;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 10px;
+            background-color: khaki;
+            margin: 20px;
+            border-radius: 5px;
+        }
+
+        h2 {
+            color: black;
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+        *{
+            padding: 5px;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            letter-spacing: 5px;
+        }
+        .container{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .images {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            width: 100%;
+            height: 3%;
+        }
+        .img-container {
+            overflow: hidden;
+            
+            width: 20%;
+            height: 30%;
+            transition: width 0.5s ease;
+        }
+        img {
+            height: 30%;
+            object-fit: cover;
+        }
+        .img-container:hover {
+            width: 40%;
+            border-radius: 20px;
+        }
+        ul {
+            list-style: disc;
+            margin-left: 20px;
+        }
+
+        .contact{
+            background-color: khaki;
+            padding-bottom: 150px;
+        }
+        .contact-image{
+    
+             width:500px;
+            overflow: hidden;
+        }
+        .contact-image img{
+            width:100%;
+            height: 100%;
+            object-fit: contain;
+        }
+        .contact-main{
+            display: flex;
+            flex-wrap: wrap-reverse;
+            justify-content: center;
+        }
+        .contact-form{
+            background-color: khaki;
+            padding:30px;
+        }
+        .input:focus,
+        textarea:focus{
+            outline: 1.5px solid khaki;
+        }
+
+        .input,
+        textarea {
+            width: 100%;
+            border: 1px solid saddlebrown;
+            border-radius: 5px;
+        }
+        form{
+    
+
+            display: flex;
+            flex-direction: column;
+        }
+        .input{
+            padding:10px !important;
+            margin: 10px 0px;
+            height: 45px;
+            border:1px solid ;
+        }
+        textarea{
+            height: 70px !important;
+        }
+        .name{
+            display: flex;
+            justify-content: space-between;
+    
+        }
+        .name-list
+        {
+            width:48%;
+
+        }
+        footer {
+            background-color: saddlebrown;
+            color: black;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#about me">About Me</a>
+        <a href="#biodata">Biodata</a>
+        <a href="#education">Education</a>
+        <a href="#family">Family</a>
+        <a href="#gallery">Gallery</a>
+    </nav>
+
+    <header>
+        <div class="image-container">
+            <img src="image/Nia.png" alt="nia" style="float: right; height: 400px;">
+            Welcome to my Personal Website!
+        </div>
+    </header>
+
+<section id="about me">
+    <h2>About Me</h2>
+    <p>I hold a Diploma in Information Management from Universiti Teknologi Mara Cawangan Kelantan, and I am committed to staying at the forefront of industry trends through continuous learning. Known for my self-confidence and teamwork, I thrive in dynamic environments and am eager to bring my skills to a team that values integrity, teamwork, and leadership.</p>
+    
+    <div class="container">
+        <div class="images">
+            <div class="img-container"><img src="image/niasatu.jpg" alt=""></div>
+            <div class="img-container"><img src="image/niadua.jpg" alt=""></div>
+            <div class="img-container"><img src="image/niatiga.jpg" alt=""></div>
+            <div class="img-container"><img src="image/gambarnia.jpg" alt=""></div>
+            <div class="img-container"><img src="image/niaempat.jpg" alt=""></div>
+        </div>
+    </div>
+</section>
+
+<section id="biodata">
+    <div class="image-container">
+        <img src="image/niasatu.jpg" alt="Gambar Profil" style="float: left;height: 350px; width: 250px;">
+    </div>
+    <h2>Biodata</h2>
+    <p>Name: Nia Lailatul Fitri Binti Azhar</p>
+    <p>I/C:031208-03-0308 </p>
+    <p>Age:21 years old </p>
+    <p>Address: Lot 1553 Kampung Buloh Melintang Kangkong, 17040 Pasir Mas, Kelantan, Malaysia.</p>
+    <p>Gender:Female </p>
+    <p>Phone:013-9103572 </p>
+    <p>Date of Birth : 08 Dicember 2003</p>
+    <p>Email: nieyazhar08@gmail.com</p>
+    
+</section>
+
+<section id="experience">
+    <h2>Experience</h2>
+    <p>Know My Experience</p>
+    <ul>
+        <li>Adobe Animate</li>
+        <li>Adobe Illustrator</li>
+	<li>Adobe InDesign</li>
+	<li>Adobe Photoshop</li>
+	<li>Microsoft Word</li>
+	<li>Microsoft PowerPoint</li>
+	<li>Microsoft Excel</li>
+	<li>Canva</li>
+    </ul>
+    <p>Volunteer Activities:</p>
+    <ul>
+        <li>Biro Teknikal Karnival: Akademik Dan Keusahawanan V3: Intelligence Gained By Sharing Knowledge (19 Jun 2023)</li>
+        <li>Biro Persegaran IM Jalinan Kasih: 5D Unite With Community (12 Disember 2023)</li>
+    </ul>
+</section>
+
+    
+<section id="education">
+    <h2>Education</h2>
+    <p>Sekolah Menengah Kebangsaan Kangkong</p>
+    <p>Form: 1-5</p>
+    <p>SPM: 3A 2B 2C </p>
+    <p>Year ends: 2021</p>
+    <p>Diploma Pengurusan Maklumat</p>
+    <p>Institusi: Universiti Teknologi MARA Cawangan Kelantan</p>
+    <p>Year ends: 2024</p>
+   
+</section>
+
+    
+<section id="family">
+    <h2>Family</h2>
+    <p>Father: Azhar Bin Mustafa</p>
+    <p>Mother: Hazana Binti Muhammad</p>
+    <p>Number of Siblings: 4 </p>
+    <ul>
+        <li>Mohd Hafizol Shafirul Bin Azhar (Big Brother)</li>
+        <li>Nia Issayantie Binti Azhar (Sister)</li>
+	<li>Muhammad Hafizol Salman Bin Azhar (Brother)</li>
+	<li>Nia Lailatul Fitri Binti Azhar (Me)</li>
+    </ul>
+</section>
+
+    
+<section id="gallery">
+    <h2>Gallery</h2>
+    <p>My Precious:</p>
+    <div class="gallery-container">
+        <div style="background-image: url('image/4d.jpg');"></div>
+        <div style="background-image: url('image/KITA.jpg');"></div>
+        <div style="background-image: url('image/program.jpg');"></div>
+        <div style="background-image: url('image/family.jpg');"></div>
+    </div>
+
+    <style>
+        .gallery-container{
+            display: flex;
+            height: 20rem;
+            gap: 1rem;
+        }
+        .gallery-container > div{
+            flex: 1;
+            border-radius: 1rem;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: auto 100%;
+            transition: all .8s cubic-bezier(.25, .4, .45, 1,4);
+        }
+        .gallery-container > div:hover{
+            flex: 5;
+        }
+    </style>
+</section>
+
+<section id="contact">
+    <h2>Contact Me</h2>
+    <div class="contact" id="join">
+        <div class="contact-main">
+
+          <div class="contact-form">
+            <form >
+              <div class="name"> 
+                <input  class="input name-list" type="text" placeholder="First Name*">
+                <input  class="input name-list" type="text" placeholder="Last Name*">
+              </div>
+              <input id="email" class="input"  type="text" placeholder="Email*">
+              <textarea  id="email" class="input" minlength="100"  placeholder="Your Message*" required></textarea>
+             <button class="nieyazhar08@gmail.com">Send</button>
+            </form>
+            </div>
+  
+          
+          <div class="contact-image">
+            <img src="background.png" alt="background"/>
+  
+          </div>
+        </div>
+      </div>
+</section>
+<footer>
+    &copy; 2023 Nia Lailatul Fitri. Hak cipta terpelihara.
+</footer>
+</body>
+</html>
